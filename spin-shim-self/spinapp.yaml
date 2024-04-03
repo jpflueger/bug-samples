@@ -1,0 +1,8 @@
+apiVersion: core.spinoperator.dev/v1alpha1
+kind: SpinApp
+metadata:
+  name: spin-shim-self
+spec:
+  image: "ttl.sh/spin-shim-self:24h"
+  executor: containerd-shim-spin
+  replicas: 2
